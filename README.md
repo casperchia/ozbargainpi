@@ -7,9 +7,13 @@ These parameters are mainly email addresses and the file location for the deals_
 
 You will also need to add an entry to crontab so that runme.py gets executed automatically by cron.
 You can edit your crontab as follows:
+
 	$ crontab -e
+	
 Then add the following line to the bottom of the file:
+
 	*/30 * * * * ~/location/of/runme.py
+	
 The line above just means that it will run every 30 minutes.
 
 Save and that's it!
