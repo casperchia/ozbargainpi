@@ -22,8 +22,8 @@ def getDeals(urls):
 			print "Votes:", votes 
 
 			# print deal id
-			titleStr = str(deal.find(class_="title").a)
-			title = str(deal.find(class_="title").a.get_text())
+			titleStr = deal.find(class_="title").a.encode('utf-8')
+			title = deal.find(class_="title").a.get_text().encode('utf-8')
 			regex = re.search('.*node/(\d+)', titleStr)
 			deal_id = regex.group(1)
 			print "Deal ID:", deal_id
