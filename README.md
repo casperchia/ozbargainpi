@@ -17,5 +17,5 @@ Then add the following line to the bottom of the file:
 	
 The line above just means that it will run every 30 minutes.
 
-Save and that's it!     
+Save and that's it!    
 
